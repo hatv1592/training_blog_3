@@ -7,9 +7,22 @@ app/storage/
 
 # Laravel 5 & Lumen specific
 bootstrap/cache/
+storage/
 .env.*.php
 .env.php
 .env
+.composer.lock
+/vendor
+/node_modules
+/public/storage
+Homestead.yaml
+Homestead.json
+.env
+bootstraps/cache/
+storage/
+public/css
+public/js
+public/bower
 
 # Rocketeer PHP task runner and deployment package. https://github.com/rocketeers/rocketeer
 .rocketeer/
