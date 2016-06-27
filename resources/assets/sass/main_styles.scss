@@ -1,7 +1,14 @@
 body {
     font-family: 'Lato';
 }
-
+h1, h2, h3, h4, h5, h6 {
+    color: #25383B;
+    font-size: 1.5em;
+    line-height: 1.5em;
+}
+p {
+    margin: 0 0 2em 0;
+}
 .fa-btn {
     margin-right: 6px;
 }
@@ -12,4 +19,62 @@ body {
 }
 .center{
     text-align: center;
+}
+.wrapper{
+    position: relative;
+    .style1 {
+        .feature {
+            background-color: #fff;
+            float: left;
+            width: 100%;
+            .image {
+                width: 48%;
+                float: left;
+                & img {
+                    max-width: 100%;
+                }
+            }
+            .content {
+                padding: 2em 3em 0.1em 3em;
+                width: 52%;
+                float: right;
+            }
+        }
+        h1, h2, h3, h4, h5, h6 {
+            color: #555;
+        }
+        .button.alt:hover{
+            background: #51BAA4;
+            color: #fff !important;
+        }
+    }
+
+}
+.image {
+    border-radius: 0;
+    border: 0;
+    display: inline-block;
+    position: relative;
+    & img {
+        border-radius: 0;
+        display: block;
+    }
+}
+ul {
+    list-style: disc;
+    margin: 0 0 2em 0;
+    padding-left: 1em;
+    .actions {
+        cursor: default;
+        list-style: none;
+        padding-left: 0;
+        & > li:last-child {
+            padding-right: 0;
+        }
+        & li {
+            display: inline-block;
+            padding: 0 1em 0 0;
+            vertical-align: middle;
+        }
+    }
 }
